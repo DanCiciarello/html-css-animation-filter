@@ -72,3 +72,148 @@
     border-radius: 20px;
     transform: scale(1.5);
 }
+
+.ex-10-icon {
+    animation-name: circle-spinning;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes circle-spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ex-11-icon:hover {
+    animation-name: circle-spinning-back;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes circle-spinning-back {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(270deg);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: ex-12-top-white-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: ex-12-bottom-white-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes ex-12-top-white-animation {
+    0%, 100% {
+        left: 10%;
+    }
+    50% {
+        left: 70%;
+    }
+}
+
+@keyframes ex-12-bottom-white-animation {
+    0%, 100% {
+        right: 20%;
+    }
+
+    50% {
+        right: 70%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: ex-13-top-white-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: ex-13-bottom-white-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes ex-13-top-white-animation {
+    0%, 100% {
+        top: -10px;
+        left: 10%;
+    }
+    17% {
+        top: -10px;
+        left: 90%;
+    }
+    25% {
+        top: 22px;
+        left: 90%;
+    }
+    33% {
+        top: 50px;
+        left:90%
+    }
+    50% {
+        top: 50px;
+        left: 30%;
+    }
+    67% {
+        top:50px;
+        left: -10%;
+    }
+    75% {
+        top: 22px;
+        left: -10%;
+    }
+    83% {
+        top: -10px;
+        left: -10%;
+    }
+}
+
+@keyframes ex-13-bottom-white-animation {
+    0%, 100% {
+        bottom: -10px;
+        right: 20%;
+    }
+    17% {
+        bottom: -10px;
+        right: 75%;
+    }
+    25% {
+        bottom: 22px;
+        right: 75%;
+    }
+    33% {
+        bottom: 50px;
+        right: 75%;
+    }
+    50% {
+        bottom: 50px;
+        right: 20%;
+    }
+    67% {
+        bottom: 50px;
+        right: -10%;
+    }
+    75% {
+        bottom: 22px;
+        right: -10%;
+    }
+    83% {
+        bottom: -10px;
+        right: -10%;
+    }
+}
